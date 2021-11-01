@@ -2,11 +2,8 @@
 
 class LaunchDiscussionWorkflow
 
-  def initialize(discussion, host, participants_email_string)
+  def initialize(discussion)
     @discussion = discussion
-    @host = host
-    @participants_email_string = participants_email_string
-    @participants = []
   end
 
   # Expects @participants array to be filled with User objects
@@ -26,8 +23,9 @@ end
 class Participants 
 
   def initialize(participants_email_string, participants)
-    @participants_email_string
-    @participants = []
+    @participants_email_string = participants_email_string
+    @participants = participants
+    participants = []
   end
   
   def generate_participant_users_from_email_string
