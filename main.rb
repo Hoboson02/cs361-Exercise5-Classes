@@ -2,8 +2,9 @@
 
 class LaunchDiscussionWorkflow
 
-  def initialize(discussion)
+  def initialize(discussion, host)
     @discussion = discussion
+    @host = host
   end
 
   # Expects @participants array to be filled with User objects
