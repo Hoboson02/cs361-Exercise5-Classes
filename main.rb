@@ -34,7 +34,7 @@ end
 
 
 discussion = Discussion.new(title: "fake", ...)
-host = User.find(42)
+host = User.find(42)s
 participants = "fake1@example.com\nfake2@example.com\nfake3@example.com"
 
 workflow = LaunchDiscussionWorkflow.new(discussion, host, participants)
