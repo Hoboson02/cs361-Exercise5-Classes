@@ -25,7 +25,7 @@ end
 
 class Participants 
 
-  def initialize(participants_email_string)
+  def initialize(participants_email_string, participants)
     @participants_email_string
     @participants = []
   end
